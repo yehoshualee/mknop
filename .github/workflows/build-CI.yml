@@ -3,10 +3,10 @@ name: N1-OpenWrt-CI
 on:
 #  schedule:
 #    - cron: '0 22 * * 5'
-  watch:
-    types: [started]
   repository_dispatch:
     types: 'run'
+  watch:
+    types: [started]
     
 env:
   TZ: 'Asia/Shanghai'
